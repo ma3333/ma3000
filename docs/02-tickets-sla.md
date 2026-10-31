@@ -11,7 +11,7 @@ stateDiagram-v2
     Assigned --> Triaged: נדחה ע"י הספק
     Accepted --> InProgress: Check-in באתר
     InProgress --> PendingQuote: נדרשת הצעת מחיר
-    PendingQuote --> InProgress: הצעה אושרה
+    PendingQuote --> InProgress: הצעה אושרה (הצעה בודדת או זוכה ב-RFQ, ראה מסמך 10)
     InProgress --> OnHold: ממתין לחלק / לגישה
     OnHold --> InProgress
     InProgress --> Resolved: הספק סיים

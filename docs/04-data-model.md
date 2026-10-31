@@ -32,6 +32,16 @@ erDiagram
     INSPECTION ||--o{ FINDING : produces
     FINDING ||--o| TICKET : creates
     BUILDING ||--o{ CERTIFICATE : has
+    BUILDING ||--o{ RFQ : publishes
+    TICKET ||--o| RFQ : may_open
+    RFQ ||--o{ RFQ_ITEM : contains
+    RFQ ||--o{ RFQ_INVITATION : invites
+    RFQ_INVITATION }o--|| VENDOR : to
+    RFQ ||--o{ BID : receives
+    VENDOR ||--o{ BID : submits
+    BID ||--o{ BID_LINE_ITEM : prices
+    RFQ ||--o| RFQ_AWARD : awarded
+    RFQ_AWARD ||--o| WORK_ORDER : creates
 ```
 
 ## 4.2 ישויות לפי מודול
@@ -88,6 +98,19 @@ erDiagram
 | **VendorInsurance** | vendor_id, type, insurer, policy_no, valid_until, doc_id |
 | **VendorEngagement** | tenant_id, vendor_id, contract_doc_id, price_list (JSON), sla_override, status (approved/blocked) |
 | **VendorRating** | work_order_id, rater_user_id, timeliness, quality, price, courtesy, comment |
+
+### RFQ (בקשות להצעות מחיר)
+| ישות | שדות עיקריים |
+|------|---------------|
+| **Rfq** | tenant_id, level (unit/building/portfolio/platform), scope_ids[], source (manual/ticket/finding/maintenance_renewal), source_id, type (one_off/project/service_contract/framework/quick), trade, title, description, distribution (invited/approved_pool/open), sealed, submission_deadline, site_visit_at, desired_start/end, payment_terms, required_warranty_months, required_insurance, budget_estimate (פנימי), evaluation_weights (JSON), min_bids, status |
+| **RfqItem** | rfq_id, line_no, description, unit, quantity (כתב כמויות) |
+| **RfqInvitation** | rfq_id, vendor_id, invited_at, viewed_at, status (invited/interested/declined/submitted) |
+| **RfqQuestion** | rfq_id, vendor_id (מוסתר באשר מפורסם), question, answer, published_at |
+| **RfqAmendment** | rfq_id, description, changes (JSON), published_at |
+| **Bid** | rfq_id, vendor_id, total_amount, vat_included, duration_days, start_date, warranty_months, payment_terms, valid_until, notes, status (draft/submitted/withdrawn/won/lost), submitted_at, round (1 / BAFO) |
+| **BidLineItem** | bid_id, rfq_item_id, unit_price, total |
+| **BidEvaluation** | bid_id, evaluator_user_id, scores (JSON), weighted_score, comment, conflict_declared |
+| **RfqAward** | rfq_id, bid_id, justification, approval_flow (JSON: חתימות / הצבעה), awarded_at, resulting_work_order_id / contract_id |
 
 ### Maintenance
 | ישות | שדות עיקריים |

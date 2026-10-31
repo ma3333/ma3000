@@ -6,7 +6,7 @@
 - WebSocket / SSE לעדכונים בזמן אמת (סטטוס תקלה, התראות).
 - Pagination מבוסס Cursor, סינון ומיון אחידים.
 - Idempotency-Key לפעולות תשלום ויצירה.
-- Webhooks יוצאים ללקוחות (חתומים ב-HMAC) על אירועים: `ticket.*`, `payment.*`, `inspection.*`, `certificate.expiring`.
+- Webhooks יוצאים ללקוחות (חתומים ב-HMAC) על אירועים: `ticket.*`, `payment.*`, `inspection.*`, `rfq.*`, `bid.*`, `certificate.expiring`.
 
 ## 8.2 נקודות קצה עיקריות (דוגמה)
 
@@ -45,6 +45,23 @@ POST   /api/v1/work-orders/:id/check-in
 POST   /api/v1/work-orders/:id/complete
 POST   /api/v1/work-orders/:id/quote
 POST   /api/v1/work-orders/:id/rating
+
+# RFQ
+POST   /api/v1/rfqs                       # יצירה (level, scope, source)
+GET    /api/v1/rfqs?level=&status=&building=
+PATCH  /api/v1/rfqs/:id
+POST   /api/v1/rfqs/:id/publish
+POST   /api/v1/rfqs/:id/invitations
+POST   /api/v1/rfqs/:id/questions         # ספק שואל
+POST   /api/v1/rfqs/:id/questions/:qid/answer
+POST   /api/v1/rfqs/:id/amendments
+GET    /api/v1/rfqs/:id/comparison        # רק אחרי מועד ההגשה במעטפות סגורות
+POST   /api/v1/rfqs/:id/evaluations
+POST   /api/v1/rfqs/:id/award
+GET    /api/v1/vendor/rfqs                # לוח RFQ לספק
+POST   /api/v1/vendor/rfqs/:id/bids
+PATCH  /api/v1/vendor/bids/:bidId
+POST   /api/v1/vendor/bids/:bidId/withdraw
 
 # Maintenance & Compliance
 GET    /api/v1/buildings/:id/maintenance-plan
