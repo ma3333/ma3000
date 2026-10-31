@@ -105,7 +105,9 @@ apps/
       maintenance/     # Preventive plans, schedules, recurring tasks
       inspections/     # Audit templates, inspections, findings, safety score
       documents/       # Document store, versions, expiry, permissions
-      comms/           # Announcements, notifications, templates, surveys, votes
+      comms/           # Announcements, surveys, votes
+      notifications/   # Audiences, policy matrix, templates, channel adapters
+                       # (email/WhatsApp/SMS/push), digests, inbox, delivery log
       bookings/        # Facilities, visitors (P2)
       reports/         # Dashboards, exports, PDF generation
       stats/           # Anonymized aggregate datasets, external API

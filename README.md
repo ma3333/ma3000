@@ -29,6 +29,7 @@
 14. [Debugging ותמיכה טכנית](docs/14-debugging.md)
 15. [איסוף וניתוח לוגים ודוחות תקופתיים](docs/15-logging-analytics.md)
 16. [מעבר מסודר: מפת מודולים, פערים ורעיונות נוספים](docs/16-gap-analysis.md)
+17. [תקשורת והודעות: מייל, WhatsApp, SMS, קבוצות, ערוצים ותדירות](docs/17-notifications.md)
 
 ## עקרונות מנחים
 

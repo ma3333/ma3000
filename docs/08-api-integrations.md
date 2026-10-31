@@ -88,8 +88,8 @@ GET    /api/stats/v1/safety-scores?groupBy=building_age
 
 | תחום | ספקים אפשריים | שלב |
 |------|---------------|-----|
-| SMS | 019 SMS, InforU, Twilio | MVP |
-| WhatsApp | WhatsApp Business Cloud API | P2 |
+| SMS | 019 SMS, InforU, Twilio. שני ספקים לפחות עם מעבר אוטומטי בתקלה | MVP |
+| WhatsApp | WhatsApp Business Cloud API (ישירות מול Meta או דרך ספק מורשה), ראה [מסמך 17](17-notifications.md) | P2 |
 | Email | Amazon SES / SendGrid / Postmark | MVP |
 | סליקה ישראלית | Cardcom, Tranzila, Grow (Meshulam), PayPlus; Bit דרך הסולק | P2 |
 | הוראות קבע | מס"ב דרך הסולק / קובץ מס"ב | P2 |

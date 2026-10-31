@@ -132,6 +132,8 @@ Gateway, Device, Point, Telemetry, AlarmRule, Alarm, CommandDefinition, Command,
 | **Certificate** | building_id, asset_id?, type (תסקיר מעלית, אישור כיבוי אש, בדיקת חשמל, גז...), inspector_name, inspector_company, license_no, issued_at, valid_until, result, doc_id |
 
 ### Documents & Communication
+> מודול ההודעות (קבוצות, מדיניות שליחה, תבניות, הודעות, הסכמות, תיבה משותפת) מפורט ב[מסמך 17](17-notifications.md#1712-מודל-נתונים-תוספת).
+
 | ישות | שדות עיקריים |
 |------|---------------|
 | **Document** | building_id / tenant_id, category (תקנון, ביטוח, פרוטוקול, דוח ליקויים, חוזה, היתר, תכנית), title, current_version_id, valid_until, visibility (committee/residents/vendors/auditors/public) |
