@@ -105,7 +105,7 @@ erDiagram
 | **Rfq** | tenant_id, level (unit/building/portfolio/platform), scope_ids[], source (manual/ticket/finding/maintenance_renewal), source_id, type (one_off/project/service_contract/framework/quick), trade, title, description, distribution (invited/approved_pool/open), sealed, submission_deadline, site_visit_at, desired_start/end, payment_terms, required_warranty_months, required_insurance, budget_estimate (פנימי), evaluation_weights (JSON), min_bids, status |
 | **RfqItem** | rfq_id, line_no, description, unit, quantity (כתב כמויות) |
 | **RfqInvitation** | rfq_id, vendor_id, invited_at, viewed_at, status (invited/interested/declined/submitted) |
-| **RfqQuestion** | rfq_id, vendor_id (מוסתר באשר מפורסם), question, answer, published_at |
+| **RfqQuestion** | rfq_id, vendor_id (מוסתר כאשר מפורסם), question, answer, published_at |
 | **RfqAmendment** | rfq_id, description, changes (JSON), published_at |
 | **Bid** | rfq_id, vendor_id, total_amount, vat_included, duration_days, start_date, warranty_months, payment_terms, valid_until, notes, status (draft/submitted/withdrawn/won/lost), submitted_at, round (1 / BAFO) |
 | **BidLineItem** | bid_id, rfq_item_id, unit_price, total |
