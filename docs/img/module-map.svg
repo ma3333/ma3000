@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1340" viewBox="0 0 2000 1340">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#404040"/></marker></defs>
+<rect width="2000" height="1340" fill="#FFFFFF"/>
+<text x="1000.0" y="46" font-size="30" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מפת מודולים · פלטפורמת ניהול בניינים</text>
+<text x="1000.0" y="76" font-size="17" font-weight="normal" fill="#595959" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">המספר בעיגול = סדר הבנייה בתכנית הפיתוח · מסגרת מקווקוות = אופציה עתידית</text>
+<rect x="1540" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1665.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ועד בית</text>
+<rect x="1242" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1367.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חברת ניהול</text>
+<rect x="944" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1069.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">דייר / נציג חברה</text>
+<rect x="646" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="771.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בעל מקצוע</text>
+<rect x="348" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="473.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מבקר בטיחות</text>
+<rect x="50" y="100" width="250" height="40" rx="20" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="175.0" y="126" font-size="17" font-weight="bold" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">גורם חוץ</text>
+<rect x="50" y="160" width="1740" height="46" rx="10" fill="#1F4E79"/>
+<text x="920" y="190" font-size="19" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">אפליקציית Web / PWA בעברית (RTL)  ·  API  ·  אפליקציות Native (עתידי)</text>
+<rect x="1816" y="250" width="164" height="80" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="296.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בניין ואנשים</text>
+<rect x="1816" y="380" width="164" height="210" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="491.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תפעול ותחזוקה</text>
+<rect x="1816" y="640" width="164" height="80" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="686.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">כספים</text>
+<rect x="1816" y="770" width="164" height="80" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="816.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תקשורת וקהילה</text>
+<rect x="1816" y="900" width="164" height="80" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="946.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ניהול ודוחות</text>
+<rect x="1816" y="1030" width="164" height="100" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="1086.0" font-size="18" font-weight="bold" fill="#2E75B6" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תשתית ופלטפורמה</text>
+<rect x="1816" y="1170" width="164" height="60" rx="10" fill="#F7F9FC" stroke="#C9D6E8"/>
+<text x="1898" y="1206.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">אינטגרציות</text>
+<rect x="1530" y="250" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="254" r="17" fill="#548235"/>
+<text x="1786" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">6</text>
+<text x="1660.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בניינים ודיירים</text>
+<text x="1660.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">דירות, דיירים, ייבוא מאקסל</text>
+<rect x="1234" y="250" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1490" cy="254" r="17" fill="#548235"/>
+<text x="1490" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">7</text>
+<text x="1364.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פרופיל בניין</text>
+<text x="1364.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עץ, קטלוג ציוד, מצבים מיוחדים</text>
+<rect x="642" y="250" width="260" height="80" rx="12" fill="#FBE5D6" stroke="#C55A11" stroke-width="2.2"/>
+<circle cx="898" cy="254" r="17" fill="#C55A11"/>
+<text x="898" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">25</text>
+<text x="772.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מגדלי משרדים</text>
+<text x="772.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חדרים, חניות, מבקרים</text>
+<rect x="50" y="250" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="306" cy="254" r="17" fill="#7F7F7F"/>
+<text x="306" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="180.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תמ&quot;א 38 / פינוי-בינוי</text>
+<text x="180.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מעקב חתימות ופרויקט</text>
+<rect x="1530" y="380" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="384" r="17" fill="#548235"/>
+<text x="1786" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">8</text>
+<text x="1660.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תקלות ו-SLA</text>
+<text x="1660.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חומרה, הסלמה, היסטוריה</text>
+<rect x="1234" y="380" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1490" cy="384" r="17" fill="#548235"/>
+<text x="1490" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">9</text>
+<text x="1364.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ספקים והזמנות עבודה</text>
+<text x="1364.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">שיבוץ, ביצוע, דירוג</text>
+<rect x="938" y="380" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1194" cy="384" r="17" fill="#BF9000"/>
+<text x="1194" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">19</text>
+<text x="1068.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">RFQ והצעות מחיר</text>
+<text x="1068.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מעטפות סגורות, השוואה</text>
+<rect x="642" y="380" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="898" cy="384" r="17" fill="#7F7F7F"/>
+<text x="898" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="772.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">Marketplace ספקים</text>
+<text x="772.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">RFQ פתוח, עבודות פרטיות</text>
+<rect x="346" y="380" width="260" height="80" rx="12" fill="#FBE5D6" stroke="#C55A11" stroke-width="2.2"/>
+<circle cx="602" cy="384" r="17" fill="#C55A11"/>
+<text x="602" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">23</text>
+<text x="476.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מבקר בטיחות</text>
+<text x="476.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ביקורות, ממצאים, ציון</text>
+<rect x="50" y="380" width="260" height="80" rx="12" fill="#FBE5D6" stroke="#C55A11" stroke-width="2.2"/>
+<circle cx="306" cy="384" r="17" fill="#C55A11"/>
+<text x="306" y="390" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">24</text>
+<text x="180.0" y="415.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בניין חכם: ניטור</text>
+<text x="180.0" y="437.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חיישנים, התראות, מוקד</text>
+<rect x="1530" y="510" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="514" r="17" fill="#548235"/>
+<text x="1786" y="520" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">11</text>
+<text x="1660.0" y="545.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מסמכים ואישורים</text>
+<text x="1660.0" y="567.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תוקף, התראות, תכנית אחזקה</text>
+<rect x="1234" y="510" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1490" cy="514" r="17" fill="#BF9000"/>
+<text x="1490" y="520" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">18</text>
+<text x="1364.0" y="545.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פורטל ספקים מלא</text>
+<text x="1364.0" y="567.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הצעות, חשבוניות, רישיונות</text>
+<rect x="938" y="510" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1194" cy="514" r="17" fill="#BF9000"/>
+<text x="1194" y="520" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">17</text>
+<text x="1068.0" y="545.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תחזוקה מונעת</text>
+<text x="1068.0" y="567.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תבניות, הזמנות אוטומטיות</text>
+<rect x="642" y="510" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="898" cy="514" r="17" fill="#BF9000"/>
+<text x="898" y="520" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">22</text>
+<text x="772.0" y="545.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תפעול נוסף</text>
+<text x="772.0" y="567.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">שיפוצים, הובלות, ביטוח</text>
+<rect x="50" y="510" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="306" cy="514" r="17" fill="#7F7F7F"/>
+<text x="306" y="520" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="180.0" y="545.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בניין חכם: שליטה</text>
+<text x="180.0" y="567.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פקודות, מיזוג, בקרת כניסה</text>
+<rect x="1530" y="640" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="644" r="17" fill="#548235"/>
+<text x="1786" y="650" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">10</text>
+<text x="1660.0" y="675.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">כספים</text>
+<text x="1660.0" y="697.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ספר חשבונות, חיובים, סנקציות, קופה</text>
+<rect x="1234" y="640" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1490" cy="644" r="17" fill="#BF9000"/>
+<text x="1490" y="650" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">16</text>
+<text x="1364.0" y="675.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תשלומים מקוונים</text>
+<text x="1364.0" y="697.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">סליקה, מס&quot;ב, התאמות, ספקים</text>
+<rect x="938" y="640" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="1194" cy="644" r="17" fill="#7F7F7F"/>
+<text x="1194" y="650" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="1068.0" y="675.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">בנקאות פתוחה</text>
+<text x="1068.0" y="697.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תנועות וייזום תשלומים</text>
+<rect x="1530" y="770" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="774" r="17" fill="#548235"/>
+<text x="1786" y="780" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">12</text>
+<text x="1660.0" y="805.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הודעות יזומות וחירום</text>
+<text x="1660.0" y="827.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">Broadcast, מקלט</text>
+<rect x="1234" y="770" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1490" cy="774" r="17" fill="#BF9000"/>
+<text x="1490" y="780" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">20</text>
+<text x="1364.0" y="805.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תקשורת מתקדמת</text>
+<text x="1364.0" y="827.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">WhatsApp, מטריצה, תיבה</text>
+<rect x="938" y="770" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1194" cy="774" r="17" fill="#BF9000"/>
+<text x="1194" y="780" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">21</text>
+<text x="1068.0" y="805.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ממשל</text>
+<text x="1068.0" y="827.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">סקרים, הצבעות, אסיפות</text>
+<rect x="50" y="770" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="306" cy="774" r="17" fill="#7F7F7F"/>
+<text x="306" y="780" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="180.0" y="805.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עוזר AI</text>
+<text x="180.0" y="827.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">סיווג, ניסוח, OCR חכם</text>
+<rect x="1530" y="900" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1786" cy="904" r="17" fill="#548235"/>
+<text x="1786" y="910" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">13</text>
+<text x="1660.0" y="935.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">דשבורדים ודוחות</text>
+<text x="1660.0" y="957.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ועד, דייר, דוח שבועי</text>
+<rect x="1234" y="900" width="260" height="80" rx="12" fill="#FFF2CC" stroke="#BF9000" stroke-width="2.2"/>
+<circle cx="1490" cy="904" r="17" fill="#BF9000"/>
+<text x="1490" y="910" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">15</text>
+<text x="1364.0" y="935.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פורטפוליו חברת ניהול</text>
+<text x="1364.0" y="957.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מוקד, צוותים, חוצה בניינים</text>
+<rect x="938" y="900" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
+<circle cx="1194" cy="904" r="17" fill="#548235"/>
+<text x="1194" y="910" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">14</text>
+<text x="1068.0" y="935.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">Back-office</text>
+<text x="1068.0" y="957.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">לקוחות, חבילות, חיוב</text>
+<rect x="642" y="900" width="260" height="80" rx="12" fill="#FBE5D6" stroke="#C55A11" stroke-width="2.2"/>
+<circle cx="898" cy="904" r="17" fill="#C55A11"/>
+<text x="898" y="910" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">26</text>
+<text x="772.0" y="935.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">סטטיסטיקה ו-API חיצוני</text>
+<text x="772.0" y="957.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">אנונימי, מצטבר</text>
+<rect x="50" y="900" width="260" height="80" rx="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="9 6"/>
+<circle cx="306" cy="904" r="17" fill="#7F7F7F"/>
+<text x="306" y="910" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ע</text>
+<text x="180.0" y="935.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">אפליקציות Native</text>
+<text x="180.0" y="957.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">iOS ו-Android</text>
+<rect x="44" y="1022" width="1752" height="116" rx="14" fill="#F3F8FD" stroke="#2E75B6" stroke-dasharray="0"/>
+<rect x="1454" y="1036" width="330" height="88" rx="12" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2.2"/>
+<circle cx="1780" cy="1040" r="17" fill="#2E75B6"/>
+<text x="1780" y="1046" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">1</text>
+<text x="1619.0" y="1075.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תשתית</text>
+<text x="1619.0" y="1097.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">CI/CD, ענן, גיבוי, DR</text>
+<rect x="1104" y="1036" width="330" height="88" rx="12" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2.2"/>
+<circle cx="1430" cy="1040" r="17" fill="#2E75B6"/>
+<text x="1430" y="1046" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">2</text>
+<text x="1269.0" y="1075.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ליבת פלטפורמה</text>
+<text x="1269.0" y="1097.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ריבוי לקוחות, הגדרות, מיתוג</text>
+<rect x="754" y="1036" width="330" height="88" rx="12" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2.2"/>
+<circle cx="1080" cy="1040" r="17" fill="#2E75B6"/>
+<text x="1080" y="1046" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">3</text>
+<text x="919.0" y="1075.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">זהות ואבטחה</text>
+<text x="919.0" y="1097.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">OTP, הרשאות, סייבר</text>
+<rect x="404" y="1036" width="330" height="88" rx="12" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2.2"/>
+<circle cx="730" cy="1040" r="17" fill="#2E75B6"/>
+<text x="730" y="1046" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">4</text>
+<text x="569.0" y="1075.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">לוגים וביקורת</text>
+<text x="569.0" y="1097.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ניטור, Audit, Debugging</text>
+<rect x="54" y="1036" width="330" height="88" rx="12" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2.2"/>
+<circle cx="380" cy="1040" r="17" fill="#2E75B6"/>
+<text x="380" y="1046" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">5</text>
+<text x="219.0" y="1075.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מנוע הודעות</text>
+<text x="219.0" y="1097.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">מייל, SMS, באפליקציה</text>
+<text x="920" y="1012" font-size="16" font-weight="bold" fill="#2E75B6" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">כל המודולים נשענים על שכבת התשתית (נבנית ראשונה)</text>
+<rect x="1516" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1653.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">SMS · מייל · WhatsApp ← 5, 20</text>
+<rect x="1223" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1360.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">סליקה · מס&quot;ב · Bit ← 16</text>
+<rect x="930" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="1067.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חשבוניות ← 16</text>
+<rect x="637" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="774.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">SSO ← 3</text>
+<rect x="344" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="481.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חיישנים · BMS ← 24</text>
+<rect x="51" y="1176" width="274" height="48" rx="10" fill="#F2F2F2" stroke="#A6A6A6"/>
+<text x="188.0" y="1206" font-size="15" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">OCR ← 10, 16</text>
+<path d="M 1530 290 L 1494 290" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1364 330 L 1364 355 L 1620 355 L 1620 380" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 180 380 L 180 341 L 1700 341 L 1700 380" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 476 380 L 476 341" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1530 420 L 1494 420" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1234 420 L 1198 420" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 938 420 L 902 420" fill="none" stroke="#404040" stroke-width="2.2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<path d="M 1364 460 L 1364 510" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1198 550 L 1234 550" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 180 460 L 180 510" fill="none" stroke="#404040" stroke-width="2.2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<path d="M 1068 460 L 1068 497 L 1512 497 L 1512 615 L 1720 615 L 1720 640" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1454 330 L 1454 368 L 1512 368 L 1512 615 L 1720 615 L 1720 640" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1494 680 L 1530 680" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1234 680 L 1198 680" fill="none" stroke="#404040" stroke-width="2.2" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<path d="M 1530 810 L 1494 810" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M 1530 940 L 1494 940" fill="none" stroke="#404040" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="1365.6" y="341" width="128.79999999999998" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1430" y="358" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">קטגוריות וציוד</text>
+<rect x="578.2" y="327" width="243.59999999999997" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="700" y="344" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">ממצא / התראה ← תקלה אוטומטית</text>
+<rect x="1484.5" y="462" width="55.0" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1512.0" y="479" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">שיבוץ</text>
+<rect x="1188.5" y="462" width="55.0" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1216" y="479" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הצעות</text>
+<rect x="1336.5" y="471" width="55.0" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1364.0" y="488" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הרחבה</text>
+<rect x="1184.4" y="592" width="63.199999999999996" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1216" y="609" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הזמנות</text>
+<rect x="1473.7" y="601" width="284.59999999999997" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1616" y="618" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">זוכה RFQ / מצב מיוחד ← חיוב מיוחד</text>
+<rect x="1484.5" y="722" width="55.0" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1512.0" y="739" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הרחבה</text>
+<rect x="1484.5" y="852" width="55.0" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1512.0" y="869" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">הרחבה</text>
+<rect x="1455.8" y="982" width="112.39999999999999" height="22" rx="6" fill="#FFFFFF" stroke="#D0D0D0"/>
+<text x="1512.0" y="999" font-size="14" font-weight="normal" fill="#262626" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חוצה בניינים</text>
+<rect x="1760" y="1268" width="30" height="22" rx="5" fill="#E2F0D9" stroke="#548235" stroke-width="2"/>
+<text x="1750" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">MVP (עדיפות 1)</text>
+<rect x="1500" y="1268" width="30" height="22" rx="5" fill="#FFF2CC" stroke="#BF9000" stroke-width="2"/>
+<text x="1490" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עדיפות 2</text>
+<rect x="1240" y="1268" width="30" height="22" rx="5" fill="#FBE5D6" stroke="#C55A11" stroke-width="2"/>
+<text x="1230" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עדיפות 3</text>
+<rect x="980" y="1268" width="30" height="22" rx="5" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="970" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">אופציה עתידית</text>
+<rect x="720" y="1268" width="30" height="22" rx="5" fill="#DEEBF7" stroke="#2E75B6" stroke-width="2"/>
+<text x="710" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">תשתית</text>
+<text x="560" y="1285" font-size="16" font-weight="normal" fill="#262626" text-anchor="start" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">חץ = תלות / זרימת מידע   ·   ע = עתידי (ללא מספר)</text>
+</svg>

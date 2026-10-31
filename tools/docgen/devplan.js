@@ -1,5 +1,5 @@
 const L = require('./lib');
-const { P, H, bullets, numbered, table, callout, spacer, pageBreak, titlePage, toc, build, COLORS } = L;
+const { image, P, H, bullets, numbered, table, callout, spacer, pageBreak, titlePage, toc, build, COLORS } = L;
 
 const tasks = (rows) => table(['משימה', 'פירוט', 'שבועות', 'תלות'], rows, [2, 5.2, 0.9, 1.3], { centerCols: [2] });
 
@@ -41,6 +41,10 @@ const children = [
     ['אבטחה', 'Cloudflare / AWS WAF, Vault / KMS, Wazuh (SIEM, שלב 2)'],
     ['CI/CD', 'GitHub Actions'],
   ], [1.5, 6]),
+  pageBreak(),
+  H(2, '2.1 מפת מודולים'),
+  P('המספר בעיגול הוא סדר הבנייה. מסגרת מקווקוות היא אופציה עתידית. גרסה מוגדלת: docs/img/module-map.png.', { size: 19 }),
+  image(require('path').join(__dirname, '../../docs/img/module-map.png'), 642, 430),
   pageBreak(),
   H(1, '3. לוח זמנים כולל'),
   P('הלוח מניח צוות התחלתי של 3–4 מפתחים, ומתרחב בשלב 2. משכים הם הערכה ויעודכנו בסוף שלב האפיון. חודש 1 = נובמבר 2026.'),

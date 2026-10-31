@@ -7,7 +7,7 @@ Users: house committees, management companies, residents/office tenants, vendors
 - `docs/01..17-*.md` – product & technical plan (Hebrew). Read the relevant doc before building a module:
   tickets/SLA `02`, architecture `03`, data model `04`, deployment `05`, white-label `06`, security `07`+`13`,
   API `08`, roadmap `09`, RFQ `10`, smart building `11`, payments `12`, debugging `14`, logging `15`, notifications `17`,
-  building profile & special states `18`.
+  building profile & special states `18`, module map & build order `19`.
 - `deliverables/` – Hebrew Word docs (requirements, dev plan, business plan); regenerate via `tools/docgen`.
 - `apps/api` – NestJS 12 API (CommonJS, global prefix `/api`). Modules under `src/<module>/`.
 - `apps/web` – React 19 + Vite 8, `<html lang="he" dir="rtl">`. Dev proxy `/api` → `localhost:3000`.

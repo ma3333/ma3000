@@ -3,7 +3,7 @@ const d = require('docx');
 const {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType,
   AlignmentType, HeadingLevel, ShadingType, BorderStyle, LevelFormat, Header, Footer,
-  PageNumber, PageBreak, VerticalAlign,
+  PageNumber, PageBreak, ImageRun, VerticalAlign,
 } = d;
 
 const FONT = 'Arial';
@@ -100,6 +100,9 @@ const callout = (title, lines, fill = COLORS.light) => new Table({
   })] })],
 });
 
+const image = (file, widthPx, heightPx) => new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 },
+  children: [new ImageRun({ type: 'png', data: require('fs').readFileSync(file), transformation: { width: widthPx, height: heightPx } })] });
+
 const spacer = () => new Paragraph({ spacing: { after: 120 }, children: [] });
 const pageBreak = () => new Paragraph({ children: [new PageBreak()] });
 
@@ -146,4 +149,4 @@ const build = async (file, docTitle, children) => {
   console.log('wrote', file);
 };
 
-module.exports = { P, H, bullets, bullet, numbered, table, callout, spacer, pageBreak, titlePage, toc, build, COLORS, AlignmentType };
+module.exports = { image, P, H, bullets, bullet, numbered, table, callout, spacer, pageBreak, titlePage, toc, build, COLORS, AlignmentType };
