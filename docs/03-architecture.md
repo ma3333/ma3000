@@ -75,7 +75,8 @@ flowchart LR
 | PDF | Playwright/Chromium (HTML→PDF) | דוחות ממותגים ב-RTL |
 | חיפוש | PostgreSQL Full-Text (MVP) → OpenSearch (P3) | |
 | Auth | מודול Auth פנימי (OTP + סיסמה + 2FA) עם תמיכה ב-OIDC/SAML ל-SSO של חברות גדולות; אלטרנטיבה: Keycloak | |
-| Observability | OpenTelemetry → Grafana / Prometheus / Loki, Sentry לשגיאות | |
+| Observability | OpenTelemetry Collector → Loki, Prometheus/Mimir, Tempo, Grafana; Sentry לשגיאות | ראה [מסמך 14](14-debugging.md), [מסמך 15](15-logging-analytics.md) |
+| Security | Cloudflare/AWS WAF, Vault/KMS, Wazuh (SIEM), ClamAV | ראה [מסמך 13](13-cyber-security-auth.md) |
 | IoT | EMQX (MQTT Broker), TimescaleDB, סוכן Edge ב-Go | ראה [מסמך 11](11-smart-building.md) |
 | Infra | Docker, Kubernetes (k3s לשרתים קטנים), Helm, Terraform | אותו פריסה בענן ו-On-Prem |
 | CI/CD | GitHub Actions | בדיקות, Build, Deploy |
@@ -92,10 +93,12 @@ apps/
   api/                 # NestJS
     src/modules/
       tenancy/         # Tenants, branding, feature flags, settings
-      identity/        # Users, auth, OTP, SSO, roles, permissions
+      identity/        # Users, auth (OTP, passkeys, 2FA, SSO), sessions, step-up, roles
+      security/        # Rate limiting, risk scoring, fraud rules, security events
       property/        # Buildings, entrances, floors, units, assets, common areas
       people/          # Residents, occupancy, ownership, contacts, privacy prefs
-      finance/         # Charges, payments, receipts, budgets, expenses
+      finance/         # Double-entry ledger, funds, charges, payments, petty cash, checks,
+                       # vendor invoices, approvals, bank reconciliation, budgets
       tickets/         # Tickets, categories, SLA engine, escalation
       workorders/      # Work orders, quotes, check-in, vendor execution
       vendors/         # Vendor profiles, licenses, insurance, contracts, ratings
@@ -107,7 +110,9 @@ apps/
       reports/         # Dashboards, exports, PDF generation
       stats/           # Anonymized aggregate datasets, external API
       smartbuilding/   # Gateways, devices, points, telemetry, alarms, commands
-      audit/           # Audit log
+      audit/           # Audit log (append-only, hash chain)
+      reports/         # Report engine + scheduled reports (daily/weekly/monthly)
+      devtools/        # Debug mode, queue/webhook inspectors, impersonation, health
   worker/              # Background jobs (shares modules with api)
 packages/
   shared/              # Types, validation schemas (zod), enums

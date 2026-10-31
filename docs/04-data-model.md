@@ -71,6 +71,8 @@ erDiagram
 | **RoleAssignment** | user_id, role, scope_type (platform/tenant/building/unit), scope_id, valid_from, valid_to |
 
 ### Finance
+> ספר החשבונות, הקרנות, הקופה הקטנה, הצ'קים, התאמות הבנק והאישורים מפורטים ב[מסמך 12](12-payments.md#1211-מודל-נתונים-תוספת). ישויות האבטחה ב[מסמך 13](13-cyber-security-auth.md#138-מודל-נתונים-תוספת), והדוחות ב[מסמך 15](15-logging-analytics.md#157-מודל-נתונים-תוספת).
+
 | ישות | שדות עיקריים |
 |------|---------------|
 | **ChargeRule** | building_id, name, amount / per_sqm, frequency, split_method |

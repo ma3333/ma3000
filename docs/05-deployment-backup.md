@@ -98,6 +98,8 @@ flowchart TB
 
 ## 5.6 ניטור ותפעול
 
+הפירוט ב[מסמך 15](15-logging-analytics.md) (לוגים, התראות, דוחות) וב[מסמך 14](14-debugging.md) (כלי Debugging).
+
 - Metrics: Prometheus + Grafana (לטנסי, שגיאות, תורים, SLA engine lag).
 - Logs: Loki / ELK, עם `tenant_id` בכל שורה.
 - Tracing: OpenTelemetry.

@@ -24,6 +24,8 @@
 
 ## 7.2 אימות (Authentication)
 
+> מודול האימות וההגנה מסייבר מפורטים ב[מסמך 13](13-cyber-security-auth.md).
+
 - OTP ב-SMS/מייל כברירת מחדל לדיירים (ללא סיסמה).
 - סיסמה + 2FA (TOTP / Passkeys) חובה לתפקידי ניהול, ועד, מבקר וספק.
 - SSO (OIDC/SAML — Azure AD / Google Workspace) לחברות ניהול גדולות ולמגדלי משרדים.
