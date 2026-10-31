@@ -20,6 +20,13 @@ Users: house committees, management companies, residents/office tenants, vendors
 - API env: copy `apps/api/.env.example` → `apps/api/.env`. Config is validated with zod in `src/config.ts`.
 - Run all four checks (format:check, typecheck, test, build) before committing; CI runs the same plus an API smoke test.
 
+## Database
+- Migrations: plain SQL in `apps/api/migrations/NNNN_*.sql` (incl. RLS policies), applied by `src/db/migrate.ts`
+  (on API start when `MIGRATE_ON_START=true`). Drizzle schema in `src/db/schema.ts` is for typed queries only – keep both in sync.
+- Tenant-scoped work must go through `TenantDb.run(tenantId, tx => …)` (SET LOCAL ROLE ma3000_app + app.tenant_id).
+  `TenantDb.platform` bypasses RLS – platform-admin paths only.
+- Integration tests use `TEST_DATABASE_URL` (a *test* DB; schema is reset) – see `src/buildings/tenant-isolation.int.spec.ts`.
+
 ## Decisions
 - pnpm workspaces; TypeScript pinned to 5.9 (Nest needs `emitDecoratorMetadata`).
 - DB access: Drizzle ORM + `pg` (schema in `apps/api/src/db/schema.ts`, migrations via drizzle-kit). Not Prisma.
@@ -47,6 +54,9 @@ Users: house committees, management companies, residents/office tenants, vendors
 - Keep modules small and focused; match existing style; no new dependency without a reason.
 
 ## Current status
-Phase 1 (infrastructure) in progress. Done: monorepo skeleton, health check (DB + Redis), request ids, CI.
-Next: tenancy + RLS + building profile core (tree, catalogs) → identity/auth (OTP) → audit log → structured logging → notifications core. See `docs/09-roadmap.md`
+Phase 1 (infrastructure) in progress. Done: monorepo skeleton, health check (DB + Redis), request ids, CI;
+module 2 core (tenants, RLS via `TenantDb.run`, SQL migrations auto-applied on start) and module 7 core (building
+tree + wizard, two-level element/asset catalogs with attribute schemas, assets with responsibility) + Hebrew UI.
+Tenant is taken from the `x-tenant-id` header only when `DEV_MODE=true` – replace with auth in module 3.
+Next: identity/auth (OTP) → audit log → structured logging → notifications core → derived profile rules & special states. See `docs/09-roadmap.md`
 and `deliverables/02-תכנית-פיתוח.docx` §5.

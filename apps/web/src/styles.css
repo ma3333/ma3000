@@ -1,57 +1,332 @@
+/* Logical properties only (inline-start/end) so the layout stays correct in RTL and LTR. */
 :root {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #1f2937;
   background: #f3f6fa;
+  --primary: #1f4e79;
+  --accent: #2e75b6;
+  --border: #e3e8ef;
+  --muted: #6b7280;
+  --danger: #b42318;
 }
 body {
   margin: 0;
 }
-.page {
-  max-width: 640px;
-  margin: 48px auto;
-  padding: 0 16px;
+a {
+  color: var(--accent);
 }
 h1 {
-  color: #1f4e79;
-  margin-bottom: 4px;
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.6rem;
 }
-.subtitle {
-  color: #6b7280;
-  margin-top: 0;
+h2 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
 }
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 16px 24px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+h3 {
+  margin: 12px 0 8px;
+  font-size: 1rem;
+  color: var(--primary);
 }
-.checks {
-  list-style: none;
-  padding: 0;
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+  background: var(--primary);
+  color: #fff;
 }
-.checks li {
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.topbar nav {
+  display: flex;
+  gap: 16px;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.tenant-picker {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-inline-start: auto;
+}
+.tenant-picker .link {
+  color: #cfe3f7;
+}
+.tenant-picker .error {
+  color: #ffd7d2;
+}
+.page {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.page-head {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #eef1f5;
+  align-items: center;
+  gap: 12px;
+  margin-block-end: 16px;
+  flex-wrap: wrap;
+}
+.card,
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+  margin-block-end: 16px;
+}
+.subcard {
+  border-top: 1px solid var(--border);
+  padding-block: 8px;
+  margin-block-start: 12px;
+}
+.empty {
+  text-align: center;
+  padding: 32px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.building-card {
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.15s;
+}
+.building-card:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.12);
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 0.85rem;
+}
+.error {
+  color: var(--danger);
+}
+.warn {
+  color: #9a6700;
+}
+button,
+.button {
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+button.secondary {
+  background: #e8f0fa;
+  color: var(--primary);
+}
+button.link {
+  background: none;
+  color: var(--accent);
+  padding: 4px 8px;
+}
+button.danger {
+  color: var(--danger);
+}
+input,
+select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid #cdd5df;
+  border-radius: 6px;
+  background: #fff;
+  min-width: 0;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+label.check {
+  flex-direction: row;
+  align-items: center;
+}
+.topbar label {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+.attr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-block: 8px;
+}
+.inline-form {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-block-start: 12px;
+}
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-block: 16px;
+  padding: 8px 16px;
+}
+legend {
+  color: var(--primary);
+  font-weight: 600;
+  padding-inline: 6px;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #cdd5df;
+  border-radius: 999px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.chip-on {
+  background: #e8f0fa;
+  border-color: var(--accent);
+}
+.chip input {
+  display: none;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-end: 16px;
+}
+.stats span {
+  background: #fff;
+  border-radius: 999px;
+  padding: 4px 14px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
+}
+.split {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+.tree-panel {
+  max-height: 75vh;
+  overflow: auto;
+}
+.tree {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 14px;
+}
+.tree-row {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+.tree-row.selected {
+  background: #e8f0fa;
+}
+.tree-row .toggle {
+  width: 22px;
+  padding: 0;
+  background: none;
+  color: var(--muted);
+}
+.tree-label {
+  background: none;
+  color: inherit;
+  padding: 4px 6px;
+  text-align: start;
+  flex: 1;
+}
+.tree-row.root .tree-label {
+  font-weight: 700;
+}
+.kind {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+}
+.kind-element {
+  color: #c55a11;
+}
+.asset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.asset-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+  padding-block: 8px;
+  border-bottom: 1px solid var(--border);
 }
 .badge {
+  display: inline-block;
+  margin-inline-start: 6px;
+  font-size: 0.75rem;
   border-radius: 999px;
-  padding: 2px 12px;
-  font-size: 0.875rem;
+  padding: 1px 8px;
+  background: #e8f0fa;
+  color: var(--primary);
 }
-.badge-up {
-  background: #dcfce7;
-  color: #166534;
-}
-.badge-down {
+.badge-safety {
   background: #fee2e2;
   color: #991b1b;
 }
-.error {
-  color: #991b1b;
+.field-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-block-end: 8px;
+  align-items: center;
 }
-.muted {
-  color: #6b7280;
-  font-size: 0.875rem;
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #9ca3af;
+  display: inline-block;
+}
+.dot-ok {
+  background: #22c55e;
+}
+.dot-bad {
+  background: #ef4444;
 }

@@ -1,15 +1,13 @@
 import { DynamicModule, Global, Inject, Injectable, Module, OnModuleDestroy } from '@nestjs/common';
-import { drizzle, NodePgDatabase } from 'drizzle-orm/node-postgres';
+import { drizzle } from 'drizzle-orm/node-postgres';
 import Redis from 'ioredis';
 import { Pool } from 'pg';
 import { AppConfig } from '../config';
+import { TenantDb } from './tenant-db';
+import { CONFIG, DB, PG_POOL, REDIS } from './tokens';
 
-export const CONFIG = Symbol('CONFIG');
-export const PG_POOL = Symbol('PG_POOL');
-export const DB = Symbol('DB');
-export const REDIS = Symbol('REDIS');
-
-export type Database = NodePgDatabase;
+export { CONFIG, DB, PG_POOL, REDIS } from './tokens';
+export type { Database } from './tokens';
 
 @Injectable()
 class ConnectionCloser implements OnModuleDestroy {
@@ -38,8 +36,9 @@ export class DbModule {
           useFactory: () => new Redis(config.REDIS_URL, { lazyConnect: true, maxRetriesPerRequest: 1 }),
         },
         ConnectionCloser,
+        TenantDb,
       ],
-      exports: [CONFIG, PG_POOL, DB, REDIS],
+      exports: [CONFIG, PG_POOL, DB, REDIS, TenantDb],
     };
   }
 }

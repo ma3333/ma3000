@@ -32,13 +32,18 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm typecheck
+      - name: Create test database
+        run: PGPASSWORD=ma3000 psql -h localhost -U ma3000 -d ma3000 -c 'CREATE DATABASE ma3000_test'
       - run: pnpm test
+        env:
+          TEST_DATABASE_URL: postgres://ma3000:ma3000@localhost:5432/ma3000_test
       - run: pnpm build
       - name: Smoke test (API against real PostgreSQL and Redis)
         working-directory: apps/api
         env:
           DATABASE_URL: postgres://ma3000:ma3000@localhost:5432/ma3000
           REDIS_URL: redis://localhost:6379
+          DEV_MODE: 'true'
         run: |
           node dist/main.js &
           for i in $(seq 1 20); do curl -sf localhost:3000/api/health && exit 0; sleep 1; done
