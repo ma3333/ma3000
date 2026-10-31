@@ -6,7 +6,8 @@ Users: house committees, management companies, residents/office tenants, vendors
 ## Where things are
 - `docs/01..17-*.md` – product & technical plan (Hebrew). Read the relevant doc before building a module:
   tickets/SLA `02`, architecture `03`, data model `04`, deployment `05`, white-label `06`, security `07`+`13`,
-  API `08`, roadmap `09`, RFQ `10`, smart building `11`, payments `12`, debugging `14`, logging `15`, notifications `17`.
+  API `08`, roadmap `09`, RFQ `10`, smart building `11`, payments `12`, debugging `14`, logging `15`, notifications `17`,
+  building profile & special states `18`.
 - `deliverables/` – Hebrew Word docs (requirements, dev plan, business plan); regenerate via `tools/docgen`.
 - `apps/api` – NestJS 12 API (CommonJS, global prefix `/api`). Modules under `src/<module>/`.
 - `apps/web` – React 19 + Vite 8, `<html lang="he" dir="rtl">`. Dev proxy `/api` → `localhost:3000`.
@@ -25,6 +26,12 @@ Users: house committees, management companies, residents/office tenants, vendors
 - Every request gets `x-request-id` (correlation id) – keep propagating it into logs, jobs and outbound calls.
 
 ## Rules for new code
+- **Every building is different** (docs/18): never hard-code building structure or equipment. Structure is a tree
+  (entrances, floors incl. underground, units, common areas, elements); equipment comes from a two-level catalog
+  (platform + tenant) with JSON attribute schemas; assets may sit inside units with a `responsibility` field.
+  Features must react to the building profile (derived rules) and to active special states (renovation, flood…).
+- **Every charge process** has due dates, an end date, a reminder schedule and a sanction policy (grace, interest,
+  late fee, escalation) with a linked legal basis; sanctions/waivers are ledger entries, never edits.
 - **Multi-tenancy**: every tenant-owned table has `tenant_id` and a PostgreSQL RLS policy; add a test that
   another tenant cannot read/write it.
 - **No PII in logs** (phones, emails, ID numbers, bank accounts, tokens). Sensitive actions go to the audit log.
@@ -36,5 +43,5 @@ Users: house committees, management companies, residents/office tenants, vendors
 
 ## Current status
 Phase 1 (infrastructure) in progress. Done: monorepo skeleton, health check (DB + Redis), request ids, CI.
-Next: tenancy + RLS → identity/auth (OTP) → audit log → structured logging → notifications core. See `docs/09-roadmap.md`
+Next: tenancy + RLS + building profile core (tree, catalogs) → identity/auth (OTP) → audit log → structured logging → notifications core. See `docs/09-roadmap.md`
 and `deliverables/02-תכנית-פיתוח.docx` §5.

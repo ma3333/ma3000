@@ -78,6 +78,30 @@ flowchart LR
 - מכתב התראה לפני נקיטת הליכים, הפקת דוח חוב מפורט והעברה לעורך דין (ייצוא תיק). הסטטוס מסומן כ"בטיפול משפטי".
 - דוח גיול חובות: 0–30, 31–60, 61–90 ו-90+ יום.
 
+### 12.4.1 תהליך חיוב: מועדים, התראות וסנקציות
+
+**לכל תהליך חיוב** יש הגדרה מלאה של מועדים, התראות וסנקציות. זה נכון לחיוב חודשי, לחיוב מיוחד (שיפוץ, פרויקט, מצב מיוחד), לקנס ולהסדר חוב.
+
+| רכיב | מה מגדירים |
+|------|-------------|
+| **פרטי החיוב** | שם, סוג, קרן יעד, יעד כספי (ועד או חברת ניהול), סכום כולל ושיטת חלוקה (שווה, לפי מ"ר, לפי חלק ברכוש המשותף, ידני), בעלים או שוכר, מקור (החלטת אסיפה, מצב מיוחד, RFQ זוכה) |
+| **מועדים** | תאריך הפקה, **מועד תשלום** לכל תשלום, **מועד סיום לתהליך כולו**, ומספר תשלומים עם תאריכים. אפשר לבחור תשלום מלא מראש עם הנחה |
+| **התראות** | לוח תזכורות לפני המועד, ביום המועד ואחריו (למשל 7 ימים לפני, ביום, 7, 30 ו-60 יום אחרי), לפי ערוץ וקבוצה (מסמך 17). בנוסף: התראה לוועד על חייבים ודוח מצב לפני מועד הסיום |
+| **סנקציות** | ראה מדיניות סנקציות בהמשך |
+| **סגירה** | במועד הסיום: דוח מסכם (נגבה, חוב פתוח, סנקציות שנצברו), והעברת חובות פתוחים לשלב הבא במדרג הגבייה |
+
+**מדיניות סנקציות** (ניתנת להגדרה ברמת לקוח, בניין וסוג חיוב):
+- **תקופת חסד**: ימים אחרי המועד שבהם לא מופעלת סנקציה.
+- **ריבית פיגורים**: שיעור שנתי, שיטת חישוב (פשוטה, יומית או חודשית), מועד תחילה ותקרה.
+- **הצמדה למדד** (אופציונלי).
+- **קנס קבוע** על איחור, חד-פעמי או חודשי, עם תקרה.
+- **מדרג גבייה**: תזכורת ← התראה ← מכתב התראה רשמי ← פנייה של הוועד ← העברה לטיפול משפטי. לכל שלב יש מועד ופעולה.
+- **ויתור או הנחה על סנקציה**: רק בהרשאה, עם נימוק, ונרשם ביומן הביקורת.
+- **בסיס משפטי חובה**: סנקציה מופעלת רק אם קיים בסיס בתקנון או בהחלטת אסיפה. המסמך מקושר להגדרה. **שיעורי ריבית ותקרות ייבדקו מול עורך דין**, כולל החוקים החלים על ריבית והצמדה.
+- **לא חוסמים שירותים חיוניים** (מים, חשמל, מעלית, תיקון תקלה) בגלל חוב. חסימת שירותים לא חיוניים, כמו הזמנת מתקנים, אפשרית רק לפי החלטה ובדיקה משפטית.
+
+**רישום**: ריבית וקנסות נצברים כחיובים רגילים בספר החשבונות (מסמך 12.3). ויתור נרשם כפקודת זיכוי, לא כמחיקה.
+
 ## 12.5 קופה קטנה (Petty Cash)
 
 - **הגדרה**: לכל קופה יש אחראי (אב בית, חבר ועד או מנהל נכס), תקרת יתרה, תקרה לפריט בודד וקטגוריות מותרות.
@@ -163,6 +187,10 @@ flowchart LR
 | **CashCount** | box_id, counted_amount, expected_amount, diff, counted_by, at |
 | **Check** | payer, bank, number, amount, due_date, status (held/deposited/cleared/bounced) |
 | **PaymentPlan** | unit_id, total, installments (JSON), status |
+| **ChargePlan** | building_id, name, type (monthly/special/fine/settlement), fund_id, collector, total, split_method, payer_role, source (assembly_decision/state/rfq), source_id, issue_date, installments (JSON: due dates), end_date, reminder_policy_id, sanction_policy_id, status (draft/active/closed) |
+| **ReminderPolicy** | tenant_id, building_id?, offsets_days[] (לפני ואחרי המועד), channels, audience, committee_alerts |
+| **SanctionPolicy** | tenant_id, building_id?, charge_type?, grace_days, interest_annual_rate, interest_method, indexation, late_fee_amount, late_fee_recurring, cap, escalation_steps (JSON), legal_basis_doc_id |
+| **SanctionAccrual** | charge_id, policy_id, period, amount, journal_entry_id, waived_by?, waiver_reason? |
 | **VendorInvoice** | vendor_id, building_id, work_order_id?, amount, vat, doc_id, approval_status, paid_status |
 | **VendorBankChange** | vendor_id, old/new (מוצפן), verified_by, approved_by, effective_at |
 | **ApprovalPolicy** | scope, action, amount_from/to, required_roles[], min_approvers |
