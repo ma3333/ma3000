@@ -42,6 +42,9 @@ Users: house committees, management companies, residents/office tenants, vendors
   inspection frequencies etc. are building/tenant parameters linked to their source (bylaws clause, law, decision).
 - **Collect QC data from day one** (docs/23): store timestamps for every status change (received, accepted, arrived,
   resolved, closed, reopened) so responsiveness and quality scores can be computed later. Never score individual residents.
+- **Permissions are capabilities with scope** (docs/13 §13.1.1): code checks a permission key (e.g. `finance.payments.approve`)
+  for a scope (tenant / building group / building / unit), never a role name. Roles are editable bundles; one person can hold
+  different roles in different buildings (e.g. a caretaker over a building group, a company accountant tenant-wide).
 - **Every charge process** has due dates, an end date, a reminder schedule and a sanction policy (grace, interest,
   late fee, escalation) with a linked legal basis; sanctions/waivers are ledger entries, never edits.
 - **Multi-tenancy**: every tenant-owned table has `tenant_id` and a PostgreSQL RLS policy; add a test that
@@ -58,5 +61,5 @@ Phase 1 (infrastructure) in progress. Done: monorepo skeleton, health check (DB 
 module 2 core (tenants, RLS via `TenantDb.run`, SQL migrations auto-applied on start) and module 7 core (building
 tree + wizard, two-level element/asset catalogs with attribute schemas, assets with responsibility) + Hebrew UI.
 Tenant is taken from the `x-tenant-id` header only when `DEV_MODE=true` – replace with auth in module 3.
-Next: identity/auth (OTP) → audit log → structured logging → notifications core → derived profile rules & special states. See `docs/09-roadmap.md`
+Next: identity/auth (OTP) with capability-based roles, building groups and scoped assignments → audit log → structured logging → notifications core → derived profile rules & special states. See `docs/09-roadmap.md`
 and `deliverables/02-תכנית-פיתוח.docx` §5.
