@@ -38,3 +38,36 @@
 - **פריסה גמישה** — אותו קוד רץ בענן המשותף שלך, בשרת ייעודי ללקוח גדול, או On-Premise, עם שרתי גיבוי.
 - **Web-first, RTL-first** — אפליקציית Web רספונסיבית (PWA) בעברית/אנגלית/ערבית, עם אפשרות לאפליקציות מובייל בהמשך.
 - **פרטיות כברירת מחדל** — חשיפה מינימלית של פרטי דיירים, תיעוד מלא (Audit Log), עמידה בחוק הגנת הפרטיות.
+
+## הרצה מקומית (Windows)
+
+### התקנה חד-פעמית
+1. **Git**: https://git-scm.com/download/win
+2. **Node.js 22 LTS**: https://nodejs.org (מתקין Windows). אחרי ההתקנה, בטרמינל: `corepack enable` (מפעיל את pnpm).
+3. **Docker Desktop**: https://www.docker.com/products/docker-desktop. בהתקנה לבחור ב-WSL 2, ולהפעיל מחדש את המחשב אם תתבקש.
+4. **Claude Code**: לפי ההוראות ב-https://code.claude.com/docs. אפשר גם להשתמש באפליקציית Claude Desktop.
+5. מומלץ: **VS Code**, https://code.visualstudio.com
+
+### הרצת הפרויקט
+```powershell
+git clone https://github.com/ma3333/ma3000.git
+cd ma3000
+git checkout claude/building-management-app-y00vf9
+pnpm install
+docker compose up -d
+copy apps\api\.env.example apps\api\.env
+pnpm dev
+```
+אחר כך פותחים בדפדפן: http://localhost:5173. העמוד מציג את מצב השרת, מסד הנתונים ו-Redis.
+
+### עבודה מהטלפון מול המחשב (Remote Control)
+בתיקיית הפרויקט מריצים `claude remote-control`. הסשן יופיע באפליקציית Claude בטלפון, והקוד ירוץ על המחשב.
+
+### פקודות שימושיות
+| פקודה | מה היא עושה |
+|-------|-------------|
+| `pnpm dev` | מריץ שרת (פורט 3000) ואפליקציה (פורט 5173) |
+| `pnpm test` | מריץ בדיקות |
+| `pnpm typecheck` | בדיקת טיפוסים |
+| `pnpm build` | בנייה לייצור |
+| `docker compose down` | עוצר את מסד הנתונים ו-Redis |
