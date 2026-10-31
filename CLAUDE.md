@@ -7,7 +7,8 @@ Users: house committees, management companies, residents/office tenants, vendors
 - `docs/01..17-*.md` – product & technical plan (Hebrew). Read the relevant doc before building a module:
   tickets/SLA `02`, architecture `03`, data model `04`, deployment `05`, white-label `06`, security `07`+`13`,
   API `08`, roadmap `09`, RFQ `10`, smart building `11`, payments `12`, debugging `14`, logging `15`, notifications `17`,
-  building profile & special states `18`, module map & build order `19`, building network `20`, legal & bylaws `21`.
+  building profile & special states `18`, module map & build order `19`, building network `20`, legal & bylaws `21`,
+  legal cases & decisions `22`, QC scoring `23`.
 - `deliverables/` – Hebrew Word docs (requirements, dev plan, business plan); regenerate via `tools/docgen`.
 - `apps/api` – NestJS 12 API (CommonJS, global prefix `/api`). Modules under `src/<module>/`.
 - `apps/web` – React 19 + Vite 8, `<html lang="he" dir="rtl">`. Dev proxy `/api` → `localhost:3000`.
@@ -32,6 +33,8 @@ Users: house committees, management companies, residents/office tenants, vendors
   Features must react to the building profile (derived rules) and to active special states (renovation, flood…).
 - **Law and bylaws are data, not code** (docs/21): quorum, majorities, expense split, interest, renovation hours,
   inspection frequencies etc. are building/tenant parameters linked to their source (bylaws clause, law, decision).
+- **Collect QC data from day one** (docs/23): store timestamps for every status change (received, accepted, arrived,
+  resolved, closed, reopened) so responsiveness and quality scores can be computed later. Never score individual residents.
 - **Every charge process** has due dates, an end date, a reminder schedule and a sanction policy (grace, interest,
   late fee, escalation) with a linked legal basis; sanctions/waivers are ledger entries, never edits.
 - **Multi-tenancy**: every tenant-owned table has `tenant_id` and a PostgreSQL RLS policy; add a test that
