@@ -8,7 +8,7 @@ Users: house committees, management companies, residents/office tenants, vendors
   tickets/SLA `02`, architecture `03`, data model `04`, deployment `05`, white-label `06`, security `07`+`13`,
   API `08`, roadmap `09`, RFQ `10`, smart building `11`, payments `12`, debugging `14`, logging `15`, notifications `17`,
   building profile & special states `18`, module map & build order `19`, building network `20`, legal & bylaws `21`,
-  legal cases & decisions `22`, QC scoring `23`.
+  legal cases & decisions `22`, QC scoring `23`, building systems graph & failure library `24`.
 - `deliverables/` – Hebrew Word docs (requirements, dev plan, business plan); regenerate via `tools/docgen`.
 - `apps/api` – NestJS 12 API (CommonJS, global prefix `/api`). Modules under `src/<module>/`.
 - `apps/web` – React 19 + Vite 8, `<html lang="he" dir="rtl">`. Dev proxy `/api` → `localhost:3000`.
@@ -38,6 +38,10 @@ Users: house committees, management companies, residents/office tenants, vendors
   (entrances, floors incl. underground, units, common areas, elements); equipment comes from a two-level catalog
   (platform + tenant) with JSON attribute schemas; assets may sit inside units with a `responsibility` field.
   Features must react to the building profile (derived rules) and to active special states (renovation, flood…).
+- **Building systems are a graph** (docs/24): assets belong to systems (water, sewage, electrical, fire, hydrants, smoke,
+  elevators, gas, telecom, EV…), are linked (feeds/powers/controls/protects…) and serve areas (floors, risers, units).
+  Tickets, impact/notifications and maintenance should use these links; failure modes and maintenance templates are
+  catalog data per asset type, not code.
 - **Law and bylaws are data, not code** (docs/21): quorum, majorities, expense split, interest, renovation hours,
   inspection frequencies etc. are building/tenant parameters linked to their source (bylaws clause, law, decision).
 - **Collect QC data from day one** (docs/23): store timestamps for every status change (received, accepted, arrived,
@@ -61,5 +65,5 @@ Phase 1 (infrastructure) in progress. Done: monorepo skeleton, health check (DB 
 module 2 core (tenants, RLS via `TenantDb.run`, SQL migrations auto-applied on start) and module 7 core (building
 tree + wizard, two-level element/asset catalogs with attribute schemas, assets with responsibility) + Hebrew UI.
 Tenant is taken from the `x-tenant-id` header only when `DEV_MODE=true` – replace with auth in module 3.
-Next: identity/auth (OTP) with capability-based roles, building groups and scoped assignments → audit log → structured logging → notifications core → derived profile rules & special states. See `docs/09-roadmap.md`
+Next: identity/auth (OTP) with capability-based roles, building groups and scoped assignments → audit log → structured logging → notifications core → building systems graph (docs/24) → derived profile rules & special states. See `docs/09-roadmap.md`
 and `deliverables/02-תכנית-פיתוח.docx` §5.

@@ -39,8 +39,8 @@
 <rect x="1234" y="250" width="260" height="80" rx="12" fill="#E2F0D9" stroke="#548235" stroke-width="2.2"/>
 <circle cx="1490" cy="254" r="17" fill="#548235"/>
 <text x="1490" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">7</text>
-<text x="1364.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פרופיל בניין</text>
-<text x="1364.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עץ, קטלוג ציוד, מצבים מיוחדים</text>
+<text x="1364.0" y="285.0" font-size="17" font-weight="bold" fill="#1F1F1F" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">פרופיל בניין ומערכות</text>
+<text x="1364.0" y="307.0" font-size="15" font-weight="normal" fill="#404040" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">עץ, מערכות וקשרים, קטלוג, מצבים</text>
 <rect x="642" y="250" width="260" height="80" rx="12" fill="#FBE5D6" stroke="#C55A11" stroke-width="2.2"/>
 <circle cx="898" cy="254" r="17" fill="#C55A11"/>
 <text x="898" y="260" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" direction="rtl" font-family="Arial, Liberation Sans, sans-serif">28</text>
