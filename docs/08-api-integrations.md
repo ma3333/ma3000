@@ -99,6 +99,6 @@ GET    /api/stats/v1/safety-scores?groupBy=building_age
 | לוח חגים | Hebcal API / טבלה פנימית | MVP |
 | חתימה דיגיטלית | פנימי (Canvas + חותמת זמן) / DocuSign / ComSign | P2 |
 | SSO | Azure AD / Google / Okta | P2 |
-| IoT | חיישני הצפה, מעליות (Modbus/MQTT gateway), מוני מים | P3 |
+| בניין חכם | BACnet, Modbus, KNX, M-Bus, MQTT, OPC-UA, LoRaWAN (TTN / ChirpStack), ממשקי ענן של יצרני מעליות ובקרת כניסה ([מסמך 11](11-smart-building.md)) | P3 |
 | בקרת כניסה (משרדים) | ממשק למערכות קיימות | P3 |
 | BI חיצוני | Power BI / Looker דרך ה-Stats API | P3 |

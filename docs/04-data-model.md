@@ -112,6 +112,9 @@ erDiagram
 | **BidEvaluation** | bid_id, evaluator_user_id, scores (JSON), weighted_score, comment, conflict_declared |
 | **RfqAward** | rfq_id, bid_id, justification, approval_flow (JSON: חתימות / הצבעה), awarded_at, resulting_work_order_id / contract_id |
 
+### Smart Building
+Gateway, Device, Point, Telemetry, AlarmRule, Alarm, CommandDefinition, Command, MeterAllocation. הפירוט ב[מסמך 11](11-smart-building.md#116-מודל-נתונים-תוספת).
+
 ### Maintenance
 | ישות | שדות עיקריים |
 |------|---------------|

@@ -66,6 +66,8 @@ flowchart TB
 |------|------|--------|-------|
 | PostgreSQL | pgBackRest / Barman — Full + Incremental + WAL archiving רציף (PITR) | Full שבועי, Incr יומי, WAL רציף | 35 יום PITR, חודשי ל-12 חודשים, שנתי ל-7 שנים (מסמכים פיננסיים) |
 | Object Storage | Versioning + Cross-Region Replication + Object Lock (Immutable) | רציף | 90 יום לגרסאות שנמחקו |
+| TimescaleDB (חיישנים) | גיבוי כמו PostgreSQL, עם דחיסה ומדיניות שמירה לפי רזולוציה | יומי + WAL | גולמי 90 יום, לפי שעה שנתיים, לפי יום 7 שנים |
+| Edge Gateway | חיץ נתונים מקומי לזמן ניתוק, והגדרות שנשמרות בענן לשחזור מיידי של Gateway חלופי | רציף | לפי נפח הדיסק |
 | Redis | לא מקור אמת — RDB snapshot לנוחות בלבד | יומי | 7 ימים |
 | קונפיגורציה / Secrets | Git (IaC) + Vault/SOPS מוצפן | בכל שינוי | ללא הגבלה |
 | לקוחות On-Prem | אותו סקריפט גיבוי + העתק מוצפן לשרת הגיבוי שלך (אופציונלי בהסכמה) | יומי | לפי הסכם |

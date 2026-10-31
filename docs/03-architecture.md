@@ -20,7 +20,14 @@ flowchart LR
         WRK[Workers<br/>BullMQ: התראות, SLA, PDF, ייבוא]
         SCH[Scheduler<br/>טיפולים מונעים, תזכורות, פקיעת אישורים]
         STAT[Stats Service<br/>אגרגציה ואנונימיזציה]
+        IOT[IoT Service<br/>קליטה, חוקי התראה, פקודות]
     end
+
+    subgraph Site["בבניין"]
+        GW[Edge Gateway<br/>BACnet / Modbus / MQTT / LoRaWAN]
+    end
+
+    MQ[MQTT Broker<br/>EMQX, mTLS]
 
     subgraph Data["שכבת נתונים"]
         PG[(PostgreSQL<br/>Primary)]
@@ -28,6 +35,7 @@ flowchart LR
         RD[(Redis<br/>Cache, Queue, Sessions)]
         S3[(Object Storage<br/>S3 / MinIO<br/>מסמכים ותמונות)]
         DW[(Analytics DB<br/>ClickHouse / PG schema נפרד)]
+        TSDB[(TimescaleDB<br/>נתוני חיישנים)]
     end
 
     subgraph Ext["שירותים חיצוניים"]
@@ -46,6 +54,9 @@ flowchart LR
     STAT --> PGR --> DW
     API --> PAY & INV
     PG -. replication .-> PGR
+    GW -- יוצא בלבד --> MQ --> IOT --> TSDB
+    IOT --> RD
+    IOT --> PG
 ```
 
 ## 3.2 בחירת טכנולוגיות (המלצה)
@@ -65,6 +76,7 @@ flowchart LR
 | חיפוש | PostgreSQL Full-Text (MVP) → OpenSearch (P3) | |
 | Auth | מודול Auth פנימי (OTP + סיסמה + 2FA) עם תמיכה ב-OIDC/SAML ל-SSO של חברות גדולות; אלטרנטיבה: Keycloak | |
 | Observability | OpenTelemetry → Grafana / Prometheus / Loki, Sentry לשגיאות | |
+| IoT | EMQX (MQTT Broker), TimescaleDB, סוכן Edge ב-Go | ראה [מסמך 11](11-smart-building.md) |
 | Infra | Docker, Kubernetes (k3s לשרתים קטנים), Helm, Terraform | אותו פריסה בענן ו-On-Prem |
 | CI/CD | GitHub Actions | בדיקות, Build, Deploy |
 
@@ -94,6 +106,7 @@ apps/
       bookings/        # Facilities, visitors (P2)
       reports/         # Dashboards, exports, PDF generation
       stats/           # Anonymized aggregate datasets, external API
+      smartbuilding/   # Gateways, devices, points, telemetry, alarms, commands
       audit/           # Audit log
   worker/              # Background jobs (shares modules with api)
 packages/
@@ -101,6 +114,8 @@ packages/
   ui/                  # Design system components
 infra/
   docker/  helm/  terraform/  backup/
+edge/
+  agent/               # Go: protocol drivers, local buffer, local rules
 docs/
 ```
 
